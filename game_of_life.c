@@ -1,6 +1,7 @@
 #include <ncurses.h>
 #include <stdlib.h>
 #include <stdio.h>
+#include <string.h>
 #include "game_of_life.h"
 
 /*
@@ -19,11 +20,22 @@ int main() {
     int map[MAP_HEIGHT][MAP_WIDTH] = {0};
 		
 		int inputError = 0;
-		FILE *preset_file = fopen(PRESET_PATH, "r");
+		FILE *preset_file = NULL;
+		char full_path[256];
+
+		snprintf(full_path, sizeof(full_path), "%s%s", PRESET_DIR, PRESET_PATH);
+		preset_file = fopen(full_path, "r");
+
 		if (!preset_file) {
-				printf("Error: Cannot open file %s\n", PRESET_PATH);
+				preset_file = fopen(PRESET_PATH, "r");
+		}
+
+		if (!preset_file) {
+				printf("Error: Cannot open preset file\n");
+				printf("Tried: %s\n", full_path);
+				printf("Tried: %s\n", PRESET_PATH);
 				inputError = 1;
-		}	
+		}
 
 		if (!inputAllShapes(map, preset_file)) inputError = 1;
 
