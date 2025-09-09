@@ -1,0 +1,44 @@
+1 1
+#N Amphisbaena
+#O Unknown
+#C https://conwaylife.com/wiki/Amphisbaena
+#C https://conwaylife.com/patterns/amphisbaena.rle
+x = 7, y = 5, rule = B3/S23
+obo$2obo$3bo$3bob2o$4bobo!
+5 10
+#N Beehive
+#O John Conway
+#C An extremely common 6-cell still life.
+#C www.conwaylife.com/wiki/index.php?title=Beehive
+x = 4, y = 3, rule = B3/S23
+b2ob$o2bo$b2o!
+20 10
+#N Block
+#C An extremely common 4-cell still life.
+#C www.conwaylife.com/wiki/index.php?title=Block
+x = 2, y = 2, rule = B3/S23
+2o$2o!
+8 15
+#N Pond
+#C An 8-cell still life.
+#C www.conwaylife.com/wiki/index.php?title=Pond
+x = 4, y = 4, rule = B3/S23
+b2ob$o2bo$o2bo$b2o!
+14 30
+#N Pond
+#C An 8-cell still life.
+#C www.conwaylife.com/wiki/index.php?title=Pond
+x = 4, y = 4, rule = B3/S23
+b2ob$o2bo$o2bo$b2o!
+4 60
+#N Pond
+#C An 8-cell still life.
+#C www.conwaylife.com/wiki/index.php?title=Pond
+x = 4, y = 4, rule = B3/S23
+b2ob$o2bo$o2bo$b2o!
+15 70
+#N Block
+#C An extremely common 4-cell still life.
+#C www.conwaylife.com/wiki/index.php?title=Block
+x = 2, y = 2, rule = B3/S23
+2o$2o!
