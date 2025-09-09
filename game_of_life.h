@@ -15,7 +15,8 @@
 #define MAX_GENERATION 4
 #define INITIAL_DELAY 500
 
-#define PRESET_PATH "presets/preset3-gosper-gun-eater.txt"
+#define PRESET_DIR "/usr/share/gol/presets/"
+#define PRESET_PATH PRESET_DIR "preset3-gosper-gun-eater.txt"
 
 #define COLOR_ORANGE 8
 
